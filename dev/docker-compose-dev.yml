@@ -1,0 +1,18 @@
+
+services:
+  postgres:
+    container_name: photo-library-db
+    image: 'postgres:13.1-alpine'
+    restart: always
+    ports:
+      - '5434:5432'
+    environment:
+      POSTGRES_DB: photo-library-db
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    volumes:
+      - pg-dev-data:/var/lib/postgresql/data
+
+volumes:
+  pg-dev-data:
+    driver: local
