@@ -4,8 +4,8 @@
 Ensure the following environment variables are set or mentioned \
 keys are manually replaced with correct values.
 
-Backend - `src/main/resources/application.yml`
-Fronted - `src/main/web/src/constants.js`
+Backend - `src/main/resources/application.yml` \
+Frontend - `src/main/web/src/constants.js`
 
 Note `GOOGLE_APPLICATION_CREDENTIALS` should be defined as environment variable.
 
