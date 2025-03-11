@@ -38,5 +38,6 @@ java -jar target/*.jar &
 ### Frontend
 
 ```shell
-TBA
+npm install
+npm run dev
 ```
