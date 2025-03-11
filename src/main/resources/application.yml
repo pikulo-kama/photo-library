@@ -2,18 +2,18 @@ spring.application.name: photo-library
 
 spring:
   datasource:
-    url: ${PHOTO_LIB_DB_URL:}
-    username: ${PHOTO_LIB_DB_USER:}
-    password: ${PHOTO_LIB_DB_PASS:}
+    url: ${PHOTO_LIB_DB_URL}
+    username: ${PHOTO_LIB_DB_USER}
+    password: ${PHOTO_LIB_DB_PASS}
     driver-class-name: org.postgresql.Driver
 
   security:
     oauth2.client.registration:
       google:
-        client-id: ${PHOTO_LIB_GOOGLE_CLIENT_ID:}
-        client-secret: ${PHOTO_LIB_GOOGLE_CLIENT_SECRET:}
+        client-id: ${PHOTO_LIB_GOOGLE_CLIENT_ID}
+        client-secret: ${PHOTO_LIB_GOOGLE_CLIENT_SECRET}
         scope: profile, email
-        redirect-uri: ${PHOTO_LIB_BACKEND_URL:}/login/oauth2/code/google
+        redirect-uri: ${PHOTO_LIB_BACKEND_URL}/login/oauth2/code/google
         authorization-grant-type: authorization_code
         client-name: Google
 
@@ -21,7 +21,7 @@ cloud:
   bucket-name: photo-library-bucket-1
 
 frontend:
-  url: ${PHOTO_LIB_FRONTEND_URL:}
+  url: ${PHOTO_LIB_FRONTEND_URL}
 
 cors:
   methods: GET,POST,PUT,DELETE,OPTIONS
